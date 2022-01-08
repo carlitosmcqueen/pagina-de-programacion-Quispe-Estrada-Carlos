@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logotransparente.png">
+    <title>lista</title>
+</head>
+<body>
+    <div class="grilla">
+        <header class="header">
+                <img class="logo" src="./img/logotransparente.png" alt="logo">
+                <div class="redes">
+                    <img class="logoredes" src="./img/Facebook-logo-1-500x313.png" alt="facebook">
+            </div>
+        </header>
+        <nav class="nav">
+                <ol class="link">
+                    <li class="nav__link"><a href="./index.html">HOME</a></li>
+                    <li class="nav__link--activo"><a href="./lista.html">INSCRIPTOS</a></li>
+                    <li class="nav__link"><a href="./suscripcion.html">INSCRIBIRTE</a></li>
+                    <li class="nav__link"><a href="./info.html">INFO</a></li>
+                </ol>
+        </nav>
+        <main class="main">
+            <h2>LISTAS DE INSCRIPTOS</h2>
+            <br>
+            <table class="lista__inscritos" cellspacing="5" width="5">
+                <tr class="lista__inscritos__columnas">
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>DNI</th>
+                    <th>VIP</th>
+    
+                </tr>
+                <!-- aca podrai agragar los nombres de cualquiera que se incriba o armar un algoritmo que los acummule pero no se hacer eso ahora asi que solo lo hago manualmente -->
+                <tr class="lista__inscritos__filas">
+                    <td>Carlos</td>
+                    <td>Quispe</td>
+                    <td>3123123123</td>
+                    <td>Si</td>
+                </tr>
+                <tr class="lista__inscritos__filas">
+                    <td>Juan</td>
+                    <td>Cañella</td>
+                    <td>1220981209</td>
+                    <td>No</td>
+                </tr>
+                <tr class="lista__inscritos__filas">
+                    <td>Bruno</td>
+                    <td>Rezza</td>
+                    <td>1123719823712312</td>
+                    <td>Si</td>
+                </tr>
+                <tr class="lista__inscritos__filas">
+                    <td>Franco</td>
+                    <td>Albertoni</td>
+                    <td>131231231231223</td>
+                    <td>Si</td>
+                </tr>
+            </table>
+        </main>
+        <footer class="footer">
+            <audio  controls autoplay loop>
+                    <source src="./music/y2mate.com - Godots Theme The Fragrance of Dark Coffee.mp3" type="audio/mp3" controls autoplay>
+                    <!-- me aparecio esto, buscar despues -->
+                        Tu navegador no soporta audio HTML5
+                </audio>               
+    </footer>
+    </div>
+</body>
+</html>
