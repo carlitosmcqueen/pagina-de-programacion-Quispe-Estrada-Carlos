@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logotransparente.png">
     <title>suscripcion</title>
 </head>
+
 <body>
     <div class="grilla">
         <header class="header">
-                <img class="logo" src="./img/logotransparente.png" alt="logo">
-                <div class="redes">
-                    <img class="logoredes" src="./img/Facebook-logo-1-500x313.png" alt="facebook">
+            <img class="logo" src="./img/logotransparente.png" alt="logo">
+            <div class="redes">
+                <img class="logoredes" src="./img/Facebook-logo-1-500x313.png" alt="facebook">
+            </div>
+            <div>
+                <h1>INSTITUTO <br>DE INTERNET <br>GENERICO</h1>
             </div>
         </header>
         <nav class="nav">
-                <ol class="link">
-                    <li class="nav__link"><a href="./index.html">HOME</a></li>
-                    <li class="nav__link"><a href="./lista.html">INSCRIPTOS</a></li>
-                    <li class="nav__link--activo"><a href="./suscripcion.html">INSCRIBIRTE</a></li>
-                    <li class="nav__link"><a href="./info.html">INFO</a></li>
-                </ol>
+            <ol class="link">
+                <li class="nav__link wow animate__animated animate__backInDown"><a href="./index.html">HOME</a></li>
+                <li class="nav__link wow animate__animated animate__backInDown"><a href="./lista.html">INSCRIPTOS</a>
+                </li>
+                <li class="nav__link--activo wow animate__animated animate__zoomIn"><a
+                        href="./suscripcion.html">INSCRIBITE</a></li>
+                <li class="nav__link wow animate__animated animate__backInDown"><a href="./info.html">INFO</a></li>
+            </ol>
         </nav>
         <main class="main">
             <form action="#" method="get">
@@ -32,16 +40,18 @@
                 <br>
                 <div class="nombres">
                     <h2>Ingresa tus Datos</h2>
-    
+
                     <input class="nombres__tamaño" type="text" placeholder="Nombre" name="nombre" required
                         label="confirmar">
                     <br>
                     <input class="nombres__tamaño" type="text" placeholder="Apellido" name="apellido" required
                         label="confirmar">
                     <br>
-                    <input class="nombres__tamaño" type="number" placeholder="Edad" name="edad" required label="confirmar">
+                    <input class="nombres__tamaño" type="number" placeholder="Edad" name="edad" required
+                        label="confirmar">
                     <br>
-                    <input class="nombres__tamaño" type="number" placeholder="DNI" name="dni" required label="confirmar">
+                    <input class="nombres__tamaño" type="number" placeholder="DNI" name="dni" required
+                        label="confirmar">
                 </div>
                 <div class="sexo">
                     <h2>Eleji una Opcion</h2>
@@ -54,17 +64,17 @@
                     <p class="formulario">Prefiero no responder</p>
                     <input type="radio" value="noresponde" name="sexo" required label="confirmar">
                 </div>
-    
+
                 <div class="vip">
                     <h2>Queres pertenecer a los mienbros V.I.P</h2>
                     <input type="checkbox" value="si" name="check" label="confirmar">
                 </div>
-    
+
                 <div class="checkbox">
                     <h2>Acepto los Terminos y Condiciones</h2>
                     <input type="checkbox" value="si" name="check" label="confirmar" required>
                 </div>
-    
+
                 <div class="opciones">
                     <p class="formulario">Nacionalidad</p>
                     <select name="Nacionalidad">
@@ -74,17 +84,21 @@
                         <option value="4">Otro</option>
                     </select>
                 </div>
-                <input type="submit" value="enviar" for="confirmar">
-                <input type="reset" value="Borrar información">
+                <div class="confirmar">
+                    <input type="submit" value="enviar" for="confirmar">
+                    <input type="reset" value="Borrar información">
+                </div>
             </form>
         </main>
         <footer class="footer">
-            <audio  controls autoplay loop>
-                    <source src="./music/y2mate.com - Godots Theme The Fragrance of Dark Coffee.mp3" type="audio/mp3" controls autoplay>
-                    <!-- me aparecio esto, buscar despues -->
-                        Tu navegador no soporta audio HTML5
-                </audio>               
-    </footer>
+            <audio controls autoplay loop>
+                <source src="./music/y2mate.com - Godots Theme The Fragrance of Dark Coffee.mp3" type="audio/mp3"
+                    controls autoplay>
+                <!-- me aparecio esto, buscar despues -->
+                Tu navegador no soporta audio HTML5
+            </audio>
+        </footer>
     </div>
 </body>
+
 </html>

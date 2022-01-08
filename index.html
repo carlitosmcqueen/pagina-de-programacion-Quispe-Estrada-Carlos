@@ -5,10 +5,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/logotransparente.png">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./img/logotransparente.png">
         <title>home</title>
 </head>
 
@@ -20,13 +21,20 @@
                         <div class="redes">
                                 <img class="logoredes" src="./img/Facebook-logo-1-500x313.png" alt="facebook">
                         </div>
+                        <div>
+                                <h1>INSTITUTO <br>DE INTERNET <br>GENERICO</h1>
+                        </div>
                 </header>
                 <nav class="nav">
                         <ol class="link">
-                                <li class="nav__link--activo"><a href="./index.html">HOME</a></li>
-                                <li class="nav__link"><a href="./lista.html">INSCRIPTOS</a></li>
-                                <li class="nav__link"><a href="./suscripcion.html">INSCRIBITE</a></li>
-                                <li class="nav__link"><a href="./info.html">INFO</a></li>
+                                <li class="nav__link--activo wow animate__animated animate__zoomIn"><a
+                                                href="./index.html">HOME</a></li>
+                                <li class="nav__link wow  animate__animated animate__backInDown"><a
+                                                href="./lista.html">INSCRIPTOS</a></li>
+                                <li class="nav__link wow  animate__animated animate__backInDown"><a
+                                                href="./suscripcion.html">INSCRIBITE</a></li>
+                                <li class="nav__link wow  animate__animated animate__backInDown"><a
+                                                href="./info.html">INFO</a></li>
                         </ol>
                 </nav>
                 <main class="main">
@@ -79,14 +87,18 @@
                                 exercitationem.</p>
                 </main>
                 <footer class="footer">
-                        <audio  controls autoplay loop>
-                                <source src="./music/y2mate.com - Godots Theme The Fragrance of Dark Coffee.mp3" type="audio/mp3" controls autoplay>
+                        <audio controls autoplay loop>
+                                <source src="./music/y2mate.com - Godots Theme The Fragrance of Dark Coffee.mp3"
+                                        type="audio/mp3" controls autoplay>
                                 <!-- me aparecio esto, buscar despues -->
-                                    Tu navegador no soporta audio HTML5
-                            </audio>               
+                                Tu navegador no soporta audio HTML5
+                        </audio>
                 </footer>
         </div>
-
+        <script src="js/wow.min.js"></script>
+        <script>
+                new WOW().init();
+        </script>
 </body>
 
 </html>

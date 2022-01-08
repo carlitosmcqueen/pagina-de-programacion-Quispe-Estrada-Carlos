@@ -21,9 +21,11 @@
 /* todo el header */
 .header {
   grid-area: header;
-  background-image: url(../img/imgheader.jpg);
+  /* imagen de fondo del header */
+  /* background-image: url(../img/imgheader.jpg); */
+  background: rgb(9, 13, 25);
+  background: linear-gradient(0deg, rgba(0, 0, 5, 1) 25%, rgba(12, 46, 154, 1) 94%);
   background-size: cover;
-  height: 20vh;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -32,58 +34,67 @@
 
 .logo {
   height: 20vh;
+  transform: rotateZ(60deg);
 }
 
 .logoredes {
+  display: none;
   position: absolute;
   height: 5vh;
-  top: 15vh;
-  left: 85vw;
+  top: 14vh;
+  left: 90vw;
 }
 
 /* navegacion */
 .nav {
   grid-area: nav;
-  background-image: url(../img/fondonav.jpg);
+  /* fondo de imagen del nav */
+  /* background-image: url(../img/fondonav.jpg); */
+  background: rgb(35, 72, 115);
+  background: linear-gradient(0deg, rgb(12, 46, 154, 1) 0%, rgba(0, 0, 5, 1) 25%);
   background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width:100vw;
+  justify-content: center;
 }
 
 .link {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav__link {
   display: flex;
-  background-color: rgb(24, 32, 145);
+  background-color: rgb(211, 208, 42);
   border: 5px solid black;
-  width: 10vw auto;
-  height: 8vh;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0px auto;
+  padding: 5px;
+}
+
+.nav__link:hover {
+  background-color: rgb(206, 5, 5);
 }
 
 .nav__link--activo {
   display: flex;
   background-color: rgb(206, 5, 5);
   border: 5px solid black;
-  width: 9vw auto;
-  height: 8vh;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-weight: bold;
+  padding: 5px;
 
 }
 
 /* codigo main */
 .main {
+  /* todavia no me decidi los colores o si va a ser una pagina de programacion o de gymnasio */
   grid-area: main;
   background-image: url(../img/fondomain.jpg);
   background-size: cover;
@@ -114,12 +125,56 @@
 
 .footer {
   grid-area: footer;
-  background-color: rgb(35, 154, 233)
+  background: rgb(24, 102, 126);
+  background: linear-gradient(0deg, rgba(12, 46, 154, 1) 5%, rgba(0, 0, 5, 1) 41%);
+}
+
+.nombres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nombres__tamaño {
   height: 3vh;
   width: 25vw;
+}
+
+.nombres__tamaño:focus {
+  background-color: rgb(21, 177, 224);
+  width: 60vw;
+
+}
+
+.sexo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.vip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 th {
@@ -133,11 +188,11 @@ td {
 }
 
 /* estilos de textos y cosas varias */
-h1{
+h1 {
   display: none;
   color: rgb(29, 232, 247);
-
 }
+
 h2 {
   text-align: center;
   color: rgb(29, 232, 247);
@@ -153,13 +208,15 @@ p {
 a {
   color: black;
   text-decoration: none;
+  font-size: 14.8px;
 }
 
 /* fin de celular */
 /* vista de tablet igual al del celular */
 @media(min-width:768px) {
+
   /* cambiar para los items de nav para que se acomoden */
-  .nav{
+  .nav {
     grid-area: nav;
     background-image: url(../img/fondonav.jpg);
     background-size: cover;
@@ -170,6 +227,39 @@ a {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: center;
+
+  }
+
+  .header {
+    justify-content: start;
+    justify-items: start;
+    background: rgb(0, 0, 5);
+    background: linear-gradient(90deg, rgba(0, 0, 5, 1) 37%, rgba(12, 46, 154, 1) 83%);
+
+  }
+
+  .nav {
+    background: rgb(0, 0, 5);
+    background: linear-gradient(98deg, rgba(0, 0, 5, 1) 27%, rgba(12, 46, 154, 1) 83%);
+  }
+
+  h1 {
+    display: flex;
+    padding-top: 3vh;
+
+  }
+
+  .logoredes {
+    display: flex;
+    position: absolute;
+    height: 5vh;
+    top: 14vh;
+    left: 90vw;
+  }
+
+  .footer {
+    background: rgb(12, 46, 154);
+    background: linear-gradient(98deg, rgba(12, 46, 154, 1) 25%, rgba(1, 1, 29, 1) 80%);
 
   }
 }
@@ -197,8 +287,10 @@ a {
   .nav {
     grid-area: nav;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgb(0, 0, 6);
+    background: linear-gradient(98deg, rgba(0, 0, 6, 1) 100%, rgba(12, 46, 154, 1) 100%);
+    align-items: space-around;
+    justify-content: space-around;
     height: 72vh;
     width: 23vw;
   }
@@ -206,6 +298,8 @@ a {
   .link {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
   }
 
   .main {
@@ -213,18 +307,17 @@ a {
     background-color: red;
     overflow: scroll;
     height: 72vh;
-    padding:2vh;
+    padding: 2vh;
   }
-  .nav__link {   box-sizing: border-box;
-  position: relative;
-  padding: 1vh;
-  background-color: rgb(24, 32, 145);
-  border: 5px solid black;
-  width: 9vw auto;
-  height: 6vh;
-  margin-top: 6vh;
-  text-align: center;
+
+  .nav__link {
+    box-sizing: border-box;
+    background-color: rgb(211, 208, 42);
+    border: 5px solid black;
+    height: 5vh;
+    text-align: center;
   }
+
   .nav__link--activo {
     box-sizing: border-box;
     position: relative;
@@ -233,12 +326,14 @@ a {
     border: 8px solid black;
     width: 9vw auto;
     height: 6vh;
-    margin-top: 4vh;
     font-weight: bold;
 
-}
+  }
+
   .footer {
     grid-area: footer;
-    height: 54px;
+    background: rgb(12, 46, 154);
+    background: linear-gradient(8deg, rgba(12, 46, 154, 1) 17%, rgba(0, 0, 6, 1) 61%);
+    height: 8vh;
   }
 }
